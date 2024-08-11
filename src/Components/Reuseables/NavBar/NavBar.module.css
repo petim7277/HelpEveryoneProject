@@ -1,0 +1,58 @@
+.NavCont{
+    display:  flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: auto;
+    height: 5rem;
+}
+
+.NavLogo{
+    display: flex;
+    flex-direction: row;
+    gap: 0.50rem;
+}
+.NavLogo img{
+    width: 3rem;
+    height: 3rem;
+}
+.NavLogo p{
+    color: #2995E2;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.NavLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 2.50rem;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-top: 0.30rem;
+}
+span{
+    font-weight: 700;
+    color: #3d3d3d;
+}
+.NavLinks p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #3d3d3d;
+}
+
+.Button{
+    padding-left: 15rem;
+    padding-top: 1rem;
+}
+
+.Button button{
+    background : none;
+    width: 7.50rem;
+    height: 2.50rem;
+    border-radius: 3px;
+    border: grey 2px solid;
+}
+
+@media (max-width: 728px) {}
+@media (max-width: 1024px) {}
