@@ -1,0 +1,47 @@
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 5rem;
+}
+.wrapDiv{
+    border: #2995E2 2px solid;
+    justify-content: center;
+    width: 65rem;
+    height: 25rem;
+    margin-left: 6rem;
+    padding-left: 3rem;
+}
+.secondDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+
+}
+.firstBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.formBox{
+    width: 25rem;
+    height: 2.50rem;
+    border: #3d3d3d 2px solid;
+    background: none;
+    color: #2995E2;
+    font-size: 13px;
+}
+.thirdDiv {
+    justify-content: center;
+    padding-top:3rem;
+    padding-left: 15rem;
+}
+.thirdDiv button{
+    width:25rem;
+    height: 2.50rem;
+    background-color: #2995E2;
+    border: 3px solid #2995E2;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 500;
+}

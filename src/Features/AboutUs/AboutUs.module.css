@@ -1,0 +1,35 @@
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 4rem;
+
+}
+
+.firstDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.firstDiv h1{
+    color: #3d3d3d;
+}
+
+.secondDiv{
+justify-content: center;
+justify-items: center;
+}
+
+.secondDiv p {
+    text-align: center;
+}
+
+.tentImage img {
+    width: 10rem;
+    height: 7rem;
+    padding-left: 47rem;
+    padding-top: -5rem;
+
+}
