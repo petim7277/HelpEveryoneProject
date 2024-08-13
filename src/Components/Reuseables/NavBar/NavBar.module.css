@@ -1,17 +1,25 @@
 .NavCont{
     display:  flex;
     flex-direction: row;
-    padding-top: 1rem;
+    padding-top: 0.50rem;
     justify-content: center;
     background-color: #FFFFFF;
     width: auto;
     height: 5rem;
 }
-
+.wrapDiv{
+    display:  flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    justify-content: center;
+    width: auto;
+    height: 5rem;
+}
 .NavLogo{
     display: flex;
     flex-direction: row;
     gap: 0.50rem;
+    padding-top: 1rem;
 }
 .NavLogo img{
     width: 3rem;
@@ -29,7 +37,6 @@
     gap: 2.50rem;
     justify-content: center;
     padding-left: 8rem;
-    padding-top: 0.30rem;
     cursor: pointer;
 
 }
@@ -38,6 +45,7 @@
     font-size: 15px;
     font-weight: 600;
     color: #3d3d3d;
+
 }
 
 .Button{
@@ -54,5 +62,59 @@
     border: grey 2px solid;
 }
 
-@media (max-width: 728px) {}
-@media (max-width: 1024px) {}
+.Hamburger{
+    display: none;
+    padding-top: -4rem;
+}
+@media (max-width: 728px) {
+    .NavCont {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: auto;
+    }
+   .wrapDiv{
+       width: 22.30rem;
+       height: 15rem;
+       gap: 5rem;
+       margin-top: -1rem;
+       display: flex;
+       flex-direction: row;
+   }
+    .NavLinks {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .NavLinks   p{
+    margin-left: 8rem;
+    }
+  .NavLogo{
+      padding-top: -4rem;
+  }
+    .Button {
+        display: none;
+    }
+ button{
+    background : none;
+    width: 5.50rem;
+    height: 2.50rem;
+    border-radius: 3px;
+    cursor: pointer;
+    border: grey 2px solid;
+}
+    .Hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 1.65rem;
+        margin-left: auto;
+        color: #2995E2;
+        margin-top: -17.50rem;
+    }
+}
+@media (max-width: 1024px) {
+
+}
