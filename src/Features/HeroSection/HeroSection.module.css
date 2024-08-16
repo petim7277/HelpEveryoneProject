@@ -1,7 +1,6 @@
 .mainCont{
     display: flex;
     flex-direction: row;
-    gap: 8rem;
     align-content: center;
     justify-content: center;
     margin-top: 4rem;
@@ -16,9 +15,8 @@
     padding-top: 5rem;
 }
 .heroText h1{
-    font-size: 45px;
+    font-size: 65px;
     font-weight: 700;
-    width: 30rem;
     color: #3d3d3d;
 }
 
@@ -174,7 +172,7 @@
         font-size: 20px;
         width: 30rem;
         text-align: center;
-        padding-left: 1rem;
+        /*padding-left: 1rem;*/
     }
 
     .mainCont   img{
@@ -194,8 +192,6 @@
         background: none;
         width: 6rem;
         height: 2rem;
-
-
     }
 
     .buttonWrap button{

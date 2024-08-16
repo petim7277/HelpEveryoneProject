@@ -43,20 +43,17 @@
     .mainDiv{
         display:  flex;
         justify-content: center;
-        align-content: center;
         align-items: center;
         flex-direction: column;
         padding-top: 5rem;
-        gap: 3rem;
-        height:auto ;
+        /*gap: 3rem;*/
+        height: auto ;
         width: 100%;
-
-
     }
     .mainDiv img{
         width: 18rem;
         height: 15rem;
-        padding-left: 5.30rem;
+        /*padding-left: 5.30rem;*/
     }
 
     .firstDiv{
@@ -92,10 +89,10 @@
     .mainDiv{
         display:  flex;
         justify-content: center;
-        align-content: center;
+        /*align-content: center;*/
         flex-direction: row;
         padding-top: 3rem;
-        gap: 5rem;
+        /*gap: 5rem;*/
         height:auto ;
         width: 100%;
     }
