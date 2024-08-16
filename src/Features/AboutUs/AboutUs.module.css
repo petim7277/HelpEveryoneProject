@@ -11,6 +11,9 @@
     flex-direction: row;
     gap: 3rem;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+
 }
 
 .firstDiv h1{
@@ -32,4 +35,98 @@ justify-items: center;
     padding-left: 47rem;
     padding-top: -5rem;
 
+}
+
+
+@media (max-width: 768px) {
+    .mainDiv{
+        width: 100%;
+        height: auto;
+        padding-top: 2rem;
+        gap: 1rem;
+    }
+
+    .firstDiv{
+        gap: 2rem;
+        justify-content: center;
+        padding-right: 2rem;
+    }
+
+    .firstDiv h1{
+        font-size: 20px;
+    }
+    .firstDiv img{
+        width: 8.50rem;
+        height: 3rem;
+    }
+    .secondDiv{
+        justify-content: center;
+
+
+    }
+
+    .secondDiv p {
+        font-size: 12px;
+        width: 10rem;
+        background-color: orangered;
+        text-align: left;
+        display: none;
+    }
+
+    .secondDiv br {
+        display: none;
+    }
+
+    .tentImage img {
+        width: 7rem;
+        height: 3rem;
+        padding-left: 13rem;
+        padding-top: -5rem;
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .mainDiv{
+        width: 100%;
+        height: auto;
+        padding-top: 2rem;
+        gap: 1rem;
+    }
+
+    .firstDiv{
+        gap: 2rem;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+
+    .firstDiv h1{
+        font-size: 40px;
+    }
+    .firstDiv img{
+        width: 20rem;
+        height: 8rem;
+    }
+    .secondDiv{
+        justify-content: center;
+        align-items: center;
+
+    }
+    .secondDiv br{
+        display: none;
+    }
+
+    .secondDiv p {
+        font-size: 20px;
+        width: 50rem;
+        padding-left: 7rem;
+    }
+
+    .tentImage img {
+        width: 7rem;
+        height: 3rem;
+        padding-left: 13rem;
+        padding-top: -5rem;
+
+    }
 }

@@ -3,9 +3,10 @@ import specialHelpImage from "../../Assets/SpecialHelp.svg"
 const SpecialHelp = () => {
   return(
           <div className={styles.mainDiv}>
+          <div className={styles.wrapDiv}>
 
                           <div className={styles.firstDiv}>
-                            <img src={specialHelpImage} alt={"Special help image"}/>
+                            <img src={specialHelpImage} alt={"Special help "}/>
                           </div>
                           <div className={styles.secondDiv}>
                            <h1>Do You Want To</h1>
@@ -14,6 +15,7 @@ const SpecialHelp = () => {
                                   <button>Get in  Touch! </button>
                               </div>
                           </div>
+          </div>
           </div>
 
   )

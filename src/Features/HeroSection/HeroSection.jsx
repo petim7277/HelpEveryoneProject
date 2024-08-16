@@ -15,9 +15,8 @@ const HeroSection = () => {
                               <button>Get Started</button>
                           </div>
                           <div className={ styles.secondButton}>
-                              <p>Watch our story</p>
-                              <MdPlayArrow style={{color : "#2995E2", width:"1.80rem", height: "1.80rem",
-                                  paddingTop:"1rem"}} />
+                              <button>Watch our story <MdPlayArrow style={{color : "#2995E2", width:"1.50rem", height: "1.50rem",
+                                  marginBottom:"-0.70rem", backgroundColor: "#c5d7e7", borderRadius:"15px"}} /></button>
                           </div>
 
                       </div>

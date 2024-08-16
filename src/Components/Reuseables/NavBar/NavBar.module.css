@@ -1,25 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 .NavCont{
     display:  flex;
     flex-direction: row;
-    padding-top: 0.50rem;
-    justify-content: center;
-    background-color: #FFFFFF;
-    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
     height: 5rem;
 }
-.wrapDiv{
+
+.NavLogo{
     display:  flex;
     flex-direction: row;
-    padding-top: 1rem;
+    align-items: center;
     justify-content: center;
-    width: auto;
-    height: 5rem;
-}
-.NavLogo{
-    display: flex;
-    flex-direction: row;
     gap: 0.50rem;
-    padding-top: 1rem;
+    align-content: center;
+
 }
 .NavLogo img{
     width: 3rem;
@@ -33,88 +36,131 @@
 
 .NavLinks{
     display: flex;
-    flex-direction: row;
-    gap: 2.50rem;
-    justify-content: center;
-    padding-left: 8rem;
+    align-items: center;
+    gap: 3rem;
     cursor: pointer;
-
-}
-
-.NavLinks p{
     font-size: 15px;
     font-weight: 600;
     color: #3d3d3d;
-
 }
 
-.Button{
-    padding-left: 15rem;
-    padding-top: 0.50rem;
+.mobileButton{
+    display: none;
 }
-
-.Button button{
-    background : none;
-    width: 7.50rem;
+.webButton  {
+    background: none;
+    width: 5.50rem;
     height: 2.50rem;
     border-radius: 3px;
-    cursor: pointer;
-    border: grey 2px solid;
+    border: #2995E2 2px solid;
+    color: #2995E2;
+    align-items: center;
+    justify-content: center;
 }
-
 .Hamburger{
     display: none;
-    padding-top: -4rem;
 }
-@media (max-width: 728px) {
-    .NavCont {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-        width: auto;
-    }
-   .wrapDiv{
-       width: 22.30rem;
-       height: 15rem;
-       gap: 5rem;
-       margin-top: -1rem;
-       display: flex;
-       flex-direction: row;
-   }
-    .NavLinks {
-        display: none;
-        flex-direction: column;
+
+@media (max-width: 768px) {
+    .NavCont{
+        display:  flex;
+        flex-direction: inherit;
+        align-items: center;
+
         width: 100%;
-        height: auto;
+        height: 5rem;
 
     }
-
-    .NavLinks   p{
-    margin-left: 8rem;
-    }
-  .NavLogo{
-      padding-top: -4rem;
-  }
-    .Button {
+    .webButton {
         display: none;
     }
- button{
+ .mobileButton  {
+     display: flex;
     background : none;
     width: 5.50rem;
     height: 2.50rem;
     border-radius: 3px;
-    cursor: pointer;
-    border: grey 2px solid;
+    border: white 2px solid;
+     color: #FFFFFF;
+     margin-top: 1rem;
+     align-items: center;
+     justify-content: center;
 }
+
+ .NavLinks{
+     width: 100%;
+     height: auto;
+     font-weight: bold;
+     flex-direction: column;
+     display: none;
+     align-items: center;
+     position: absolute;
+     top: 60px;
+     left: 0;
+     background-color: #2995E2;
+     color: #FFFFFF;
+
+ }
+.NavLinks.active{
+        display: flex;
+}
+
+    .Hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 1.65rem;
+        color: #2995E2;
+        padding-top: 1rem;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .webButton {
+        display: none;
+    }
+    .mobileButton  {
+        display: flex;
+        background : none;
+        width: 5.50rem;
+        height: 2.50rem;
+        border-radius: 3px;
+        border: white 2px solid;
+        color: #FFFFFF;
+        margin-top: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .NavLinks{
+        width: 100%;
+        height: auto;
+        font-weight: bold;
+        flex-direction: column;
+        display: none;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #2995E2;
+        padding: 1rem 0;
+        color: #FFFFFF;
+
+    }
+    .NavLinks.active{
+        display: flex;
+    }
+
     .Hamburger {
         display: block;
         cursor: pointer;
         font-size: 1.65rem;
         margin-left: auto;
         color: #2995E2;
-        margin-top: -17.50rem;
+        padding-top: 1rem;
     }
-}
-@media (max-width: 1024px) {
 
 }
+
+

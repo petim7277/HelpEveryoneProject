@@ -1,17 +1,16 @@
 import  styles from "./OurService.module.css"
 import  ourServiceImg from "../../Assets/OurServices.svg"
-styles.guardianship = undefined;
 const  OurServices = ()=>{
     return (
         <div className={styles.mainDiv}>
-                  <div className={styles.firstDiv}>
-                      <h1>Our Services</h1>
-                      <p>Some of the services include the following:</p>
-                  </div>
+
 
                    <div className={styles.secondDiv}>
                            <div className={styles.wrap}>
-                           <div className={styles.guardianship}>
+                               <div className={styles.firstDiv}>
+                                   <h1>Our Services</h1>
+                                   <p>Some of the services include the following:</p>
+                               </div>
                                    <h2>1-Guardianship Of Children Without Families</h2>
                                    <p>Lorem ipsum dolor sit amet consectetur. Id ullamcorper<br/>
                                        iaculis laoreet egestas velit phasellus euismod aliquam.<br/>
@@ -21,8 +20,7 @@ const  OurServices = ()=>{
                                        <button>About This </button>
                                    </div>
                            </div>
-                           </div>
-                       <img src={ourServiceImg} alt={"OurServices image"}/>
+                       <img src={ourServiceImg} alt={""}/>
                    </div>
         </div>
     )

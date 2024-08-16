@@ -12,29 +12,32 @@ const NavBar = () => {
   return(
       <div className={styles.NavCont}>
 
-            <div className={styles.NavLogo}>
-                <img src={logoImage} alt={"CompanyLogo"}/>
-                <p>Helpeveryone</p>
-            </div>
-      <div className={styles.wrapDiv}>
-          <div className={`${styles.NavLinks}${menuOpen?styles.NavLinks:""}`}>
-              <p ><span>Services</span></p>
-              <p>Donate</p>
-              <p>Who we are</p>
-              <p>Join us</p>
-              <p>Contact us</p>
-              <p>Blog</p>
-          </div>
+                <div className={styles.NavLogo}>
+                            <img src={logoImage} alt={"CompanyLogo"}/>
+                            <p>Helpeveryone</p>
+                </div>
 
-          <div className={`${styles.Button}${menuOpen?styles.Button:""}`}>
-              <button className={`${styles.button}${menuOpen?styles.button:""}`}>Sign up</button>
-          </div>
+                 <div className={`${styles.NavLinks} ${menuOpen ? styles.active : ''}`}>
+                                  <p ><span>Services</span></p>
+                                  <p>Donate</p>
+                                  <p>Who we are</p>
+                                  <p>Join us</p>
+                                  <p>Contact us</p>
+                                  <p>Blog</p>
+                                 <div >
+                                     <button  className={styles.mobileButton}>Sign up</button>
+                                 </div>
+                 </div>
 
-      </div>
-          <div className={styles.Hamburger} onClick={toggleMenu}>
-              {menuOpen ? <FaTimes /> : <FaBars />}
-          </div>
-      </div>
+                  {/*<div  >*/}
+                      <button className={styles.webButton} >Sign up</button>
+                  {/*</div>*/}
+
+                  <div className={styles.Hamburger} onClick={toggleMenu}>
+                      {menuOpen ? <FaTimes /> : <FaBars />}
+                  </div>
+
+                    </div>
   )
 }
 export  default  NavBar;
